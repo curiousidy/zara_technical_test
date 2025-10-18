@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 4.086em;
+    padding: 0em 10.186em 0rem 0em;
+}
+
+
+.right_column {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    text-align: right;
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: regular;
+    line-height: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.right_column>p {
+    max-inline-size: 24.696rem;
+}
+
+.image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+@media (width <=1524px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0px;
+    }
+
+    .right_column {
+        text-align: left;
+    }
+
+    .right_column>p {
+        max-inline-size: 100%;
+        padding: 0rem 1rem;
+    }
+
+    .image {
+        width: 100%;
+        block-size: auto;
+    }
+}

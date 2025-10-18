@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    gap: 4.57em;
+    padding: 8.98em 1.15em 15.23em 1.15em;
+    align-items: stretch;
+}
+
+.right_column {
+    position: relative;
+    font-size: 0.81em;
+    font-weight: 400;
+    font-style: regular;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    width: 100%;
+}
+
+.texts_container {
+    position: absolute;
+    bottom: -5%;
+    max-inline-size: 34.914em;
+    word-wrap: break-word;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+@media (width <=768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texts_container {
+        position: relative;
+        width: 100%;
+    }
+}
