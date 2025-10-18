@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 85.20rem;
+}
+
+.left_column {
+    flex: 1;
+}
+
+.image {
+    max-inline-size: 100%;
+    height: auto;
+}
+
+.right_column {
+    position: relative;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.texts_container {
+    max-inline-size: 54.72rem;
+    word-wrap: break-word;
+}
+
+
+@media (width > 1268px) {
+    .container {
+        flex-direction: row;
+        align-items: stretch;
+        margin: 8.98rem 0rem 8.98rem 1.15rem;
+    }
+
+    .right_column {
+        position: relative;
+    }
+
+    .texts_container {
+        position: absolute;
+        max-inline-size: 34.914em;
+        bottom: -5%;
+    }
+}

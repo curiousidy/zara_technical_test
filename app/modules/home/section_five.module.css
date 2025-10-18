@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 99.48rem;
+    margin: 0rem 0rem 0rem 1rem;
+    gap: 1rem;
+}
+
+.car_image {
+    max-inline-size: 100%;
+     block-size: auto;
+}
+
+.man_image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+
+.p {
+    max-inline-size: 35.896rem;
+}
+
+@media ( width >=1024px) {
+    .container {
+        flex-direction: row;
+        align-items: start;
+        gap: 4.43rem;
+    }
+
+    .p {
+        max-inline-size: 35.896rem;
+    }
+}

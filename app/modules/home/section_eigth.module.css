@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+.right_column>p {
+    max-inline-size: 100%;
+    padding: 0rem 1rem;
+
+}
+
+
+@media (width >=760px) {
+    .container {
+        flex-direction: row;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    .right_column {
+        text-align: left;
+    }
+
+    .right_column>p {
+        max-inline-size: 24.696rem;
+        block-size: auto;
+    }
+
+    .image {
+        width: 100%;
+        block-size: auto;
+    }
+}
