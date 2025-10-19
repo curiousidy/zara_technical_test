@@ -17,7 +17,6 @@ export const useGsapHeroEffect = (options = {}) => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-    //Text Animation
       if (textRef.current) {
         gsap.from(textRef.current, {
           x: textDistance,
@@ -32,7 +31,6 @@ export const useGsapHeroEffect = (options = {}) => {
         });
       }
 
-    //Curtain effect
       if (imageRef.current) {
         gsap.from(imageRef.current, {
           clipPath: "inset(0 100% 0 0)",

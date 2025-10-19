@@ -34,7 +34,6 @@ export const useGsapGridEffect = (options = {}) => {
         });
       }
 
-      // Animación del grid con stagger
       if (gridRef.current) {
         const images = gridRef.current.querySelectorAll('img');
         
@@ -55,7 +54,6 @@ export const useGsapGridEffect = (options = {}) => {
           }
         });
 
-        // Efecto hover
         if (enableHover) {
           images.forEach(img => {
             img.addEventListener('mouseenter', () => {
