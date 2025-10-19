@@ -1,13 +1,16 @@
+'use client'
 import Image from "next/image";
 import styles_section_seven from "../modules/home/section_seven.module.css";
 import section_seven_column_left from "@/public/home_images/section_seven/column_left.png";
+import { useGsapCardEffect } from "@/app/hooks/useGsapCardEffect.js";
 
 const SectionSeven = () => {
+  const sectionRef = useGsapCardEffect();
   return (
-    <section className={styles_section_seven.container}>
+    <section ref={sectionRef} className={styles_section_seven.container}>
           <Image
             src={section_seven_column_left}
-            alt="section_two"
+            alt="man on a motorbike"
             priority
             className={styles_section_seven.image}
           />

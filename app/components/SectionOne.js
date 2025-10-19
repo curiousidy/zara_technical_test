@@ -1,11 +1,14 @@
+"use client";
 import Image from "next/image";
 import styles_section_one from "../modules/home/section_one.module.css";
 import intro from "@/public/home_images/section_one/section_one.png";
+import { useGsapHeroEffect } from "@/app/hooks/useGsapHeroEffect.js";
 
 const SectionOne = () => {
+    const { textRef, imageRef } = useGsapHeroEffect();
     return (
         <section className={styles_section_one.container}>
-            <div className={styles_section_one.left_column}>
+            <div className={styles_section_one.left_column} ref={textRef}>
                 <div className={styles_section_one.text_row}>
                     <span>ZARA ORIGINS</span>
                     <span>
@@ -21,7 +24,7 @@ const SectionOne = () => {
                     <span>inspired by Vivaldi's four seansons</span>
                 </div>
             </div>
-            <div className={styles_section_one.image_wrapper}>
+            <div className={styles_section_one.image_wrapper} ref={imageRef}>
                 <Image
                     src={intro}
                     alt="section_one"
@@ -30,7 +33,7 @@ const SectionOne = () => {
                 />
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default SectionOne
+export default SectionOne;

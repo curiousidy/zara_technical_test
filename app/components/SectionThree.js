@@ -1,14 +1,16 @@
+'use client'
 import Image from "next/image";
-
 import styles_section_three from "../modules/home/section_three.module.css";
 import section_three from "@/public/home_images/section_three/section_three.png";
+import { useGsapCardEffect } from "@/app/hooks/useGsapCardEffect.js";
 
 export const SectionThree = () => {
+  const sectionRef = useGsapCardEffect();
   return (
-     <section className={styles_section_three.container}>
+     <section ref={sectionRef}  className={styles_section_three.container}>
           <Image
             src={section_three}
-            alt="section_two"
+            alt="man in a suit on the street"
             priority
             className={styles_section_three.image}
           />

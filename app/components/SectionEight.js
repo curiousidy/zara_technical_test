@@ -1,14 +1,16 @@
+'use client'
 import Image from "next/image";
 import styles_section_eigth from "../modules/home/section_eigth.module.css";
 import section_eigth_right_column from "@/public/home_images/section_eigth/section_eigth.png";
-
+import { useGsapCardEffect } from "@/app/hooks/useGsapCardEffect.js";
 
 const SectionEight = () => {
+ const sectionRef = useGsapCardEffect();
   return (
-   <section className={styles_section_eigth.container}>
+   <section ref={sectionRef} className={styles_section_eigth.container}>
           <Image
             src={section_eigth_right_column}
-            alt="section_two"
+            alt="section eigth image"
             priority
             className={styles_section_eigth.image}
           />
